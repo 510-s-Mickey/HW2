@@ -1,4 +1,3 @@
-# HW2 REPO 
 ![Static Badge](https://img.shields.io/badge/language-python-blue) 
 ![Static Badge](https://img.shields.io/badge/bsd-2-clause)
 ![Static Badge](https://img.shields.io/badge/platform-linux-blue)
@@ -8,6 +7,7 @@
 ![pylint](https://img.shields.io/badge/linter-pylint-yellow)
 ![flake8](https://img.shields.io/badge/linter-flake8-blue)
 
+# HW2 REPO 
 
 This project is licensed under the BSD-2-Clause License. 
 
