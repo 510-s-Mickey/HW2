@@ -13,3 +13,8 @@ This project is licensed under the BSD-2-Clause License.
 
 
 This is HW2 OF CSC 510.
+
+Team Members:
+Zhichao Hou
+Tingxiang Ji
+Hui Sun
