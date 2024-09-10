@@ -1,7 +1,13 @@
+"""
+This is a script implement merge sort
+"""
 import rand
 
 
 def mergeSort(arr):
+    """
+    Merge Sort Function
+    """
     if (len(arr) == 1):
         return arr
 
@@ -11,6 +17,9 @@ def mergeSort(arr):
 
 
 def recombine(leftArr, rightArr):
+    """
+    recombine function, merge two sorted arrays
+    """
     leftIndex = 0
     rightIndex = 0
     mergeArr = [None] * (len(leftArr) + len(rightArr))
