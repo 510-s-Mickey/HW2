@@ -7,6 +7,10 @@
 ![pylint](https://img.shields.io/badge/linter-pylint-yellow)
 ![flake8](https://img.shields.io/badge/linter-flake8-blue)
 
+![autopep8](https://github.com/510-s-Mickey/HW2/actions/workflows/autopep8.yml/badge.svg)
+![pylint](https://github.com/510-s-Mickey/HW2/actions/workflows/pylint.yml/badge.svg)
+![flake8](https://github.com/510-s-Mickey/HW2/actions/workflows/flake8.yml/badge.svg)
+
 ### HW2 REPO 
 
 This project is licensed under the BSD-2-Clause License. 
