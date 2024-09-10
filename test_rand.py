@@ -1,6 +1,6 @@
 import subprocess
 from unittest.mock import patch
-from hw2_debugging import random_array
+from rand import random_array
 
 @patch('subprocess.run')
 def test_random_array(mock_subprocess_run):
