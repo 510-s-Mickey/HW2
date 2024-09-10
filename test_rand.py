@@ -1,4 +1,7 @@
-import subprocess
+"""
+This file is used to test rand
+"""
+
 from unittest.mock import patch
 from rand import random_array
 
