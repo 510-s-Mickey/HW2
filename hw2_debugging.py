@@ -8,7 +8,8 @@ def merge_sort(input_array):
     """
     Merge Sort Function
     """
-    if len(input_array) == 1:
+    # Add a condition to handle empty array
+    if len(input_array) <= 1:
         return input_array
 
     half = len(input_array) // 2
