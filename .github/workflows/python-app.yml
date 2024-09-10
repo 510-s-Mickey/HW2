@@ -16,6 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install flake8 pylint pyright autopep8
         pip install pytest
         pip install pytest-cov
     - name: Run tests
@@ -24,7 +25,19 @@ jobs:
     - name: Run tests with coverage
       run: |
         pytest --cov
+    - name: Run tests with flake8
+      run: |
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Format code with autopep8
+      run: |
+        autopep8 --in-place --aggressive --aggressive --recursive .
+    - name: pylint
+      run: |
+        pylint $(git ls-files '*.py')
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
+    - name: pyright
+      uses: jakebailey/pyright-action@v1
