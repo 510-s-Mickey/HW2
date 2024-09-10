@@ -6,6 +6,8 @@
 ![autopep8](https://github.com/510-s-Mickey/HW2/actions/workflows/autopep8.yml/badge.svg)
 ![pylint](https://github.com/510-s-Mickey/HW2/actions/workflows/pylint.yml/badge.svg)
 ![flake8](https://github.com/510-s-Mickey/HW2/actions/workflows/flake8.yml/badge.svg)
+[check flake8 log](https://github.com/510-s-Mickey/HW2/actions/workflows/flake8.yml)
+
 
 ### HW2 REPO 
 
