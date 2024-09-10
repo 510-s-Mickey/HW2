@@ -5,8 +5,10 @@
 ![Python application](https://github.com/510-s-Mickey/HW2/actions/workflows/python-app.yml/badge.svg)
 ![autopep8](https://github.com/510-s-Mickey/HW2/actions/workflows/autopep8.yml/badge.svg)
 ![pylint](https://github.com/510-s-Mickey/HW2/actions/workflows/pylint.yml/badge.svg)
-![flake8](https://github.com/510-s-Mickey/HW2/actions/workflows/flake8.yml/badge.svg)
-[check flake8 log](https://github.com/510-s-Mickey/HW2/actions/workflows/flake8.yml)
+#![flake8](https://github.com/510-s-Mickey/HW2/actions/workflows/flake8.yml/badge.svg)
+[![flake8](https://github.com/510-s-Mickey/HW2/actions/workflows/flake8.yml/badge.svg)](https://github.com/510-s-Mickey/HW2/actions/workflows/flake8.yml)
+
+
 
 
 ### HW2 REPO 
