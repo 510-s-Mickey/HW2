@@ -1,30 +1,40 @@
 """
-This is a script to implement merge sort
+This script implements the merge sort
 """
+
 import rand
 
 
-def merge_sort(input_array):
-    """
-    Merge Sort Function
-    """
-    # Add a condition to handle empty array
-    if len(input_array) <= 1:
-        return input_array
+def merge_sort(array):
+    """merge sort the given arr
 
-    half = len(input_array) // 2
+    Args:
+        arr (list): the list to be sorted
 
-    return recombine(merge_sort(input_array[:half]), merge_sort(input_array[half:]))
+    Returns:
+        list: the sorted arr list
+    """
+    if len(array) <= 1:
+        return array
+
+    half = len(array) // 2
+
+    return recombine(merge_sort(array[:half]), merge_sort(array[half:]))
 
 
 def recombine(left_arr, right_arr):
-    """
-    Recombine function, merge two sorted arrays
+    """Merges two sorted arrays into one sorted array.
+
+    Args:
+        leftArr (list): The first sorted list
+        rightArr (list): The second sorted list
+
+    Returns:
+        list: The merged sorted list
     """
     left_index = 0
     right_index = 0
     merge_arr = [None] * (len(left_arr) + len(right_arr))
-    
     while left_index < len(left_arr) and right_index < len(right_arr):
         if left_arr[left_index] < right_arr[right_index]:
             merge_arr[left_index + right_index] = left_arr[left_index]
@@ -32,18 +42,19 @@ def recombine(left_arr, right_arr):
         else:
             merge_arr[left_index + right_index] = right_arr[right_index]
             right_index += 1
-    
-    while left_index < len(left_arr):
-        merge_arr[left_index + right_index] = left_arr[left_index]
-        left_index += 1
-    while right_index < len(right_arr):
-        merge_arr[left_index + right_index] = right_arr[right_index]
+
+    for i in range(right_index, len(right_arr)):
+        merge_arr[left_index + right_index] = right_arr[i]
         right_index += 1
-        
+
+    for i in range(left_index, len(left_arr)):
+        merge_arr[left_index + right_index] = left_arr[i]
+        left_index += 1
+
     return merge_arr
 
 
-arr = rand.random_array([None] * 20)  # External 'arr' variable
+arr = rand.random_array([None] * 20)
 arr_out = merge_sort(arr)
 
 print(arr_out)
