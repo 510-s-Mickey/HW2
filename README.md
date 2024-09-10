@@ -7,14 +7,14 @@
 ![pylint](https://img.shields.io/badge/linter-pylint-yellow)
 ![flake8](https://img.shields.io/badge/linter-flake8-blue)
 
-# HW2 REPO 
+### HW2 REPO 
 
 This project is licensed under the BSD-2-Clause License. 
 
 
-This is HW2 OF CSC 510.
+### This is HW2 OF CSC 510. Team 3
 
-Team Members:
-Zhichao Hou
-Tingxiang Ji
-Hui Sun
+### Team Members:
+- Zhichao Hou
+- Tingxiang Ji
+- Hui Sun
