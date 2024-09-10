@@ -7,7 +7,7 @@ def test_sorted1():
     """
     assert 
     """
-    assert merge_Sort([5, 3, 1, 4, 2]) == [1, 2, 3, 4, 5]
+    assert merge_sort([5, 3, 1, 4, 2]) == [1, 2, 3, 4, 5]
 
 def test_sorted2():
     """
